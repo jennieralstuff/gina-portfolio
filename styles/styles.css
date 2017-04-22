@@ -169,7 +169,7 @@ option {
 
 .project-caption {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .project-caption .date {
@@ -352,17 +352,21 @@ COLUMN AND ROW STYLES
   justify-content: center;
 }
 
-.img-clickable {
+.home-project {
   box-shadow: 0px 5px 12px rgba(0,0,0,0.3);
   transition-duration: 0.025s;
 }
 
-.img-clickable:active {
+.home-project:hover {
+  box-shadow: 0px 5px 14px rgba(0,0,0,0.4);
+}
+
+.home-project:active {
   box-shadow: 0px 8px 13px rgba(0,0,0,0.4);
 }
 
-.nav-container {
-  /*justify-content: center;*/
+.img-clickable {
+  box-shadow: none;
 }
 
 .nav-bar {
@@ -397,6 +401,10 @@ body {
   border-top: 1px solid rgba(0,0,0,0.12);
 }
 
+.main-image {
+  display: none;
+}
+
 @media (min-width: 500px) {
   * {
     font-size: 16px;
@@ -409,6 +417,23 @@ body {
 }
 
 @media (min-width: 617px) {
+
+  .main-image {
+    display: block;
+  }
+
+  .img-clickable {
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.3);
+    transition-duration: 0.001s;
+  }
+
+  .img-clickable:hover {
+    box-shadow: 0px 5px 14px rgba(0,0,0,0.4);
+  }
+
+  .img-clickable:active {
+    box-shadow: 0px 8px 13px rgba(0,0,0,0.4);
+  }
 
   .grid-text {
     max-width: 80%;
