@@ -6,6 +6,10 @@ html {
   background-color: #fafafa;
 }
 
+body {
+  margin: 0;
+}
+
 * {
   font-family: 'Merriweather', serif;
   font-size: 14px;
@@ -407,12 +411,13 @@ COLUMN AND ROW STYLES
 
 .nav-link a {
   padding: 0px 20px;
-  text-decoration: underline;;
+  text-decoration: underline;
   color: rgb(190, 0 ,0);
 }
 
-body {
-  margin: 0;
+.link {
+  text-decoration: underline;
+  color: rgb(190, 0 ,0);
 }
 
 .border-top {
@@ -420,6 +425,18 @@ body {
 }
 
 .main-image {
+  display: none;
+}
+
+.pdf-mobile {
+  display: block;
+}
+
+.pdf-tablet {
+  display: none;
+}
+
+.pdf-desktop {
   display: none;
 }
 
@@ -431,6 +448,18 @@ body {
   .page-title {
     font-size: 5rem;
     line-height: 5rem;
+  }
+
+  .pdf-mobile {
+    display: none;
+  }
+
+  .pdf-tablet {
+    display: block;
+  }
+
+  .pdf-desktop {
+    display: none;
   }
 }
 
@@ -603,5 +632,25 @@ body {
 
   .col-1-6 {
     width:16%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pdf-mobile {
+    display: none;
+  }
+
+  .pdf-tablet {
+    display: none;
+  }
+
+  .pdf-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid-wrapper {
+    max-width: 1200px;
   }
 }
