@@ -289,6 +289,7 @@ option {
   display: none;
 }
 
+
 /* -------------------------------------------------
 
 COLUMN AND ROW STYLES
@@ -307,6 +308,10 @@ COLUMN AND ROW STYLES
   align-items: center;
 }
 
+.gutter-med {
+  padding-bottom: 60px;
+}
+
 [class*='row-'] {
   display:flex;
 }
@@ -319,7 +324,7 @@ COLUMN AND ROW STYLES
   align-items: center;
 }
 
-.flex-top {
+.flex-align-top {
   align-items: flex-start;
 }
 
@@ -540,11 +545,16 @@ COLUMN AND ROW STYLES
   [class*='col-'] {
     border-left: 10px solid rgba(255, 255, 255, 0);
     border-right: 10px solid rgba(255, 255, 255, 0);
-    border-bottom: 10px solid rgba(255, 255, 255, 0);
     flex-grow: 1;
     border-bottom: none;
     padding-bottom: 30px;
     margin-bottom: 0;
+  }
+
+  .gutter-med {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
   }
 
   .col-full-width {
@@ -632,6 +642,12 @@ COLUMN AND ROW STYLES
 
   .col-1-6 {
     width:16%;
+  }
+
+  .gutter-med {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
   }
 }
 
