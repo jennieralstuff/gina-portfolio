@@ -289,6 +289,34 @@ option {
   display: none;
 }
 
+/*-----------------------
+
+TABS STYLES
+
+------------------------*/
+
+.tabs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: auto;
+}
+
+.tab {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0px 7px 20px 7px;
+}
+
+.active-tab {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.tab-test {
+  background-color: yellow;
+}
 
 /* -------------------------------------------------
 
