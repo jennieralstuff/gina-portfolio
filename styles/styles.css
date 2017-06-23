@@ -306,6 +306,7 @@ COLUMN AND ROW STYLES
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
 }
 
 .gutter-med {
@@ -466,6 +467,11 @@ COLUMN AND ROW STYLES
 
   .pdf-desktop {
     display: none;
+  }
+
+  .gutter-med {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
