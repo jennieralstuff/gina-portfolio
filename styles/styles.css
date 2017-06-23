@@ -317,7 +317,7 @@ TABS STYLES
 }
 
 .active-tab {
-  color: red;
+  color: red !important;
   border-bottom: 3px solid red;
 }
 
