@@ -63,6 +63,13 @@ p {
   color: rgba(0,0,0,0.87);
 }
 
+.annotation {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  color: rgba(0,0,0,0.87);
+}
+
 a {
   text-decoration: none;
 }
@@ -402,6 +409,10 @@ COLUMN AND ROW STYLES
   justify-content: center;
 }
 
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
 .flex-align-center {
   align-items: center;
 }
@@ -674,6 +685,10 @@ COLUMN AND ROW STYLES
     width: 20%;
   }
 
+  .col-2-6 {
+    width: 30%;
+  }
+
   .thumb-small {
     width: 33%;
   }
@@ -735,6 +750,10 @@ COLUMN AND ROW STYLES
 
   .col-1-6 {
     width:16%;
+  }
+
+  .col-2-6 {
+    width: 34%;
   }
 
   .gutter-med {
