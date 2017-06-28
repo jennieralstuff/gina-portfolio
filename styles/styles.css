@@ -194,9 +194,14 @@ option {
   margin-bottom: 20px;
 }
 
+.project-caption .tagline {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
 .tagline {
   font-size: 24px;
-  /*text-align: center;*/
   font-style: italic;
 }
 
@@ -271,11 +276,15 @@ option {
 .grid-text {
   max-width: 800px;
   padding-top: 0px;
-  justify-content: center;
+  justify-content: center
 }
 
 .grid-text h1 {
   text-align: center;
+}
+
+.grid-text h4 {
+  /*text-align: center;*/
 }
 
 #separation-content {
@@ -331,7 +340,7 @@ KEYWORD SLIDES STYLES
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0px 3px 7px rgba(0,0,0,0.3);
-  font-family: sans-serif;
+  max-width: 600px;
 }
 
 .slideshow-wrapper div {
@@ -577,7 +586,7 @@ COLUMN AND ROW STYLES
 
   .project-caption {
     margin-top: 75px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     flex-basis: 100%;
   }
 
@@ -692,7 +701,12 @@ COLUMN AND ROW STYLES
   }
 
   .line-length-constrain {
+    width: 100%;
     max-width: 600px;
+  }
+
+  .line-length-constrain p {
+    padding-bottom: 20px;
   }
 
   .nav-bar {
