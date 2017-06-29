@@ -9,6 +9,27 @@
     <link rel="manifest" href="../favicon/manifest.json">
     <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#dc0000">
     <meta name="theme-color" content="#ffffff">
+
+    <style>
+      .col-1-6 img {
+        max-width: 75px;
+      }
+
+      .col-2-6 {
+        padding-bottom: 50px;
+      }
+
+      .flag-container {
+        align-items: start;
+      }
+
+      @media (min-width: 617px) {
+        .flag-container {
+          align-items: center;
+        }
+      }
+    </style>
+
     <title>Global Ambassador</title>
   </head>
 
@@ -111,32 +132,46 @@
           </p>
         </div>
       </div>
-      <div class="grid-wrapper flex-align-center">
-        <div class="col-1-6">
-          <img src="../images/global-amb/flag-china.jpg" alt="The flag of China" />
+      <div class="grid-wrapper flex-justify-center">
+        <div class="row">
+          <div class="col-1-6 flag-container">
+            <img
+              src="../images/global-amb/flag-china.jpg"
+              alt="The flag of China"
+            />
+          </div>
+          <div class="col-2-6">
+            <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-china.svg" alt="An illustration of a bracelet based on the flag of China" />
+          </div>
+          <div class="col-1-6 flag-container">
+            <img
+              src="../images/global-amb/flag-greece.jpg"
+              alt="The flag of Greece"
+            />
+          </div>
+          <div class="col-2-6">
+            <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-greece.svg" alt="An illustration of a bracelet based on the flag of Greece" />
+          </div>
         </div>
-        <div class="col-2-6">
-          <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-china.svg" alt="An illustration of a bracelet based on the flag of China" />
-        </div>
-        <div class="col-1-6">
-          <img src="../images/global-amb/flag-greece.jpg" alt="The flag of Greece" />
-        </div>
-        <div class="col-2-6">
-          <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-greece.svg" alt="An illustration of a bracelet based on the flag of Greece" />
-        </div>
-      </div>
-      <div class="grid-wrapper flex-align-center">
-        <div class="col-1-6">
-          <img src="../images/global-amb/flag-ireland.jpg" alt="The flag of Ireland" />
-        </div>
-        <div class="col-2-6">
-          <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-ireland.svg" alt="An illustration of a bracelet based on the flag of Ireland" />
-        </div>
-        <div class="col-1-6">
-          <img src="../images/global-amb/flag-uk.jpg" alt="The flag of the United Kingdom" />
-        </div>
-        <div class="col-2-6">
-          <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-uk.svg" alt="An illustration of a bracelet based on the flag of the United Kingdom" />
+        <div class="row">
+          <div class="col-1-6 flag-container">
+            <img
+              src="../images/global-amb/flag-ireland.jpg"
+              alt="The flag of Ireland"
+            />
+          </div>
+          <div class="col-2-6">
+            <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-ireland.svg" alt="An illustration of a bracelet based on the flag of Ireland" />
+          </div>
+          <div class="col-1-6 flag-container">
+            <img
+              src="../images/global-amb/flag-uk.jpg"
+              alt="The flag of the United Kingdom"
+            />
+          </div>
+          <div class="col-2-6">
+            <img src="../images/global-amb/global-ambassador-ucdavis-bracelet-uk.svg" alt="An illustration of a bracelet based on the flag of the United Kingdom" />
+          </div>
         </div>
       </div>
     </section>
