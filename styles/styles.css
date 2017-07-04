@@ -459,6 +459,15 @@ COLUMN AND ROW STYLES
   width: 50%;
 }
 
+#min-2-col [class*='col-'] {
+  max-width: 50%;
+}
+
+#min-2-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .wrap {
   flex-wrap: wrap;
 }

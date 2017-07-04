@@ -13,17 +13,21 @@
     <title>Call Conference</title>
 
     <style>
-      #communitySlide .slideshow-title {
+      .call-conf-blue {
         background-color: #48BDAC;
       }
-      #artsSlide .slideshow-title {
+      .call-conf-yellow {
         background-color: #FDB737;
       }
-      #landsSlide .slideshow-title {
+      .call-conf-red {
         background-color: #EF3F29;
       }
-      #learningSlide .slideshow-title {
+      .call-conf-green {
         background-color: #46B86D;
+      }
+      .color-swatch {
+        height: 100px;
+        width: 100px;
       }
     </style>
   </head>
@@ -35,7 +39,7 @@
   </nav>
 
   <body>
-    <section>
+    <section><!-- Introduction -->
       <div class="grid-wrapper grid-text">
         <div class="project-caption">
           <h1>Call Conference</h1>
@@ -93,7 +97,7 @@
       <div class="grid-wrapper"><!-- Slides -->
         <div id="keywordsSlides" class="col-full-width">
           <div id="communitySlide" class="row-full-width slideshow-wrapper slide slide-1">
-            <div class="slideshow-title">
+            <div class="slideshow-title call-conf-blue">
               <h4>Communities</h4>
             </div>
             <div class="slideshow-keywords-wrapper">
@@ -112,7 +116,7 @@
             </div>
           </div>
           <div id="artsSlide" class="row-full-width slideshow-wrapper slide slide-2" style="display:none;">
-            <div class="slideshow-title">
+            <div class="slideshow-title call-conf-yellow">
               <h4>Arts</h4>
             </div>
             <div class="slideshow-keywords-wrapper">
@@ -131,7 +135,7 @@
             </div>
           </div>
           <div id="landsSlide" class="row-full-width slideshow-wrapper slide slide-3" style="display:none;">
-            <div class="slideshow-title">
+            <div class="slideshow-title call-conf-red">
               <h4>Lands</h4>
             </div>
             <div class="slideshow-keywords-wrapper">
@@ -150,7 +154,7 @@
             </div>
           </div>
           <div id="learningSlide" class="row-full-width slideshow-wrapper slide slide-4" style="display:none;">
-            <div class="slideshow-title">
+            <div class="slideshow-title call-conf-green">
               <h4>Learning</h4>
             </div>
             <div class="slideshow-keywords-wrapper">
@@ -266,6 +270,28 @@
             />
           </div>
       </div>
+      <div id="min-2-col" class="grid-wrapper"><!-- Color Swatches -->
+        <div class="col-1-4">
+          <h4 style="margin-bottom:0px; text-align:center">Communities Blue</h4>
+          <p>#48BDAC</p>
+          <div class="img-circle call-conf-blue color-swatch"></div>
+        </div>
+        <div class="col-1-4">
+          <h4 style="margin-bottom:0px; text-align:center">Arts Yellow</h4>
+          <p>#FDB737</p>
+          <div class="img-circle call-conf-yellow color-swatch"></div>
+        </div>
+        <div class="col-1-4">
+          <h4 style="margin-bottom:0px; text-align:center">Lands Red</h4>
+          <p>#EF3F29</p>
+          <div class="img-circle call-conf-red color-swatch"></div>
+        </div>
+        <div class="col-1-4">
+          <h4 style="margin-bottom:0px; text-align:center">Learning Green</h4>
+          <p>#46B86D</p>
+          <div class="img-circle call-conf-green color-swatch"></div>
+        </div>
+      </div>
     </section>
     <section><!-- Patterns -->
       <div class="grid-wrapper grid-text">
@@ -320,7 +346,7 @@
     </section>
     <section><!-- Conference items -->
       <div class="grid-wrapper grid-text">
-        <h3 class="subheading">Conference items</h3>
+        <h3 class="subheading">Conference Items</h3>
         <div class="divider"></div>
         <div class="line-length-constrain">
           <p>
