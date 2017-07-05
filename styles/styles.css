@@ -708,6 +708,7 @@ COLUMN AND ROW STYLES
 
   .col-1-6 {
     width: 20%;
+    max-width: 20%;
   }
 
   .col-2-6 {
@@ -791,6 +792,7 @@ COLUMN AND ROW STYLES
 
   .col-1-6 {
     width:16%;
+    max-width: 16.67%;
   }
 
   .col-2-6 {
