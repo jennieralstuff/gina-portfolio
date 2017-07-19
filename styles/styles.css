@@ -210,6 +210,7 @@ option {
 
 .tagline {
   font-size: 24px;
+  line-height: 2.5rem;
   font-style: italic;
 }
 
