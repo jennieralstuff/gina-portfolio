@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#dc0000">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Hygge Travel</title>
+  </head>
+
+  <nav class="nav-bar">
+    <span class="nav-link"><a href="../index.html">Work</a></span>
+    <span class="nav-link"><a href="../about.html">About</a></span>
+    <span class="nav-link"><a href="../images/gina-laverone-cv-2017.pdf">CV</a></span>
+  </nav>
+
+  <body>
+    <section><!-- Introduction -->
+      <div class="grid-wrapper grid-text">
+        <div class="project-caption">
+          <h1>Hygge Travel</h1>
+          <p class="date">
+            - July 2017 -
+          </p>
+          <p class="tagline">A completely personalised travel experience</p>
+        </div>
+        <div class="col-full-width">
+          <a href="../images/hygge-travel/hygge-travel-imac-gina-laverone.jpg" target="_blank">
+            <img src="../images/hygge-travel/hygge-travel-imac-gina-laverone.jpg" alt="A visualisation of the Hygge website on a 2017 iMac Pro" class="img-clickable" />
+          </a>
+        </div>
+        <section class="line-length-constrain">
+          <h4>Goal</h4>
+          <p>
+            To create a website and company catered towards customizing the travel experience for students, graduate, travelers, and&nbsp;families.
+          </p>
+          <h4>Concept</h4>
+          <p>
+            From this proposal I created the travel agency <em>Hygge</em> to be used as an AI system designed to accommodate travelers as their personal travel mate. &quot;Hygge&quot; is a Danish word used to refer to the feeling of comfort and contentment gained through experiencing something special whether alone or with others. Through the travel agency, <em>Hygge</em> can provide the ability to foster this feeling of comfort and contentment, and be viewed as though it were a friend assisting and traveling along with the user to make their experience easy, comfortable, and stress&nbsp;free.
+          </p>
+          <h4>Design Outcome</h4>
+          <p>
+            Through <em>Hygge</em> the user can choose whether or not they wish to personalize the information displayed on the home page. If the user chooses to customize the search information, <em>Hygge</em> will load their personalized suggestions for each category of guides, tours, housing, and flights. If the user chooses not to customize the information, the home page fields will showcase the highlight travel locations, prices, and&nbsp;information.
+          </p>
+        </section>
+      </div>
+    </section>
+    <section><!-- Tabs -->
+      <div class="grid-wrapper">
+        <div id="posterTabs" class="row-full-width tabs-wrapper">
+          <a
+            id="finalPosterTab"
+            onclick="return activateTab('posterTabs', this, 'posterSlides', '')"
+            class="tab active-tab"
+            href="../images/hygge-travel/hygge-travel-website-3-gina-laverone.jpg"
+          >
+            Completed search
+          </a>
+          <a
+            id="firstPosterTab"
+            onclick="return activateTab('posterTabs', this, 'posterSlides', '')"
+            class="tab"
+            href="../images/hygge-travel/hygge-travel-website-2-gina-laverone.jpg"
+          >
+            Loading
+          </a>
+          <a
+            id="secondPosterTab"
+            onclick="return activateTab('posterTabs', this, 'posterSlides', '')"
+            class="tab"
+            href="../images/hygge-travel/hygge-travel-website-1-gina-laverone.jpg"
+          >
+            First view
+          </a>
+        </div>
+      </div>
+      <div id="posterSlides" class="grid-wrapper flex-justify-center content">
+        <img
+          src="../images/hygge-travel/hygge-travel-website-3-gina-laverone.jpg"
+          alt="website design for Hygge travel agency"
+          style="max-width: 600px; width: 100%;"
+          class="img-clickable"
+        />
+      </div>
+    </section>
+    <script>
+      function makeTabActive(tabsWrapperID, tab) {
+        if ( !document.getElementById(tab.id).className.match(/(?:^|\s)active-tab(?!\S)/) ) {
+          var elements = document.getElementById(tabsWrapperID).getElementsByClassName("active-tab");
+          for (var i=0; i<elements.length; i++) {
+            elements[i].classList.remove("active-tab");
+          }
+          document.getElementById(tab.id).classList.add("active-tab");
+        }
+      }
+
+      function changeImage(slidesID, tab) {
+        if (document.getElementById) {
+          images = document.getElementById(slidesID).getElementsByTagName("img");
+          for (var i=0; i<images.length; i++) {
+            images[i].src = tab.href;
+          }
+          return false;
+        } else {
+          return true;
+        }
+      }
+
+      function changeSlide(slidesWrapperID, slide) {
+        slides = document.getElementById(slidesWrapperID).getElementsByClassName("slide");
+        for (var i=0; i<slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        currentSlide = document.getElementById(slidesWrapperID).getElementsByClassName(slide);
+        for (var i=0; i<currentSlide.length; i++) {
+          currentSlide[i].style.display = "flex";
+        }
+      }
+
+      function activateTab(tabsWrapperID, tab, slidesWrapperID, slide) {
+        makeTabActive(tabsWrapperID, tab);
+        if (tab.href) {
+          return changeImage(slidesWrapperID, tab);
+        } else {
+          changeSlide(slidesWrapperID, slide);
+        }
+      }
+    </script>
+  </body>
+
+  <footer class="row-full-width">
+    <section class="grid-wrapper flex-justify-center text-align-center">
+      <p class="footer-text border-top">
+        &#169; 2016-2017 Gina Laverone
+        <br/> All rights reserved.
+      </p>
+  </footer>
+</html>
